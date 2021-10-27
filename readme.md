@@ -9,11 +9,11 @@ I will be building "crud bucket" which shows images from user with associated hy
 ## Models
 
 List here any models in your app and their properties
-{
+"{
     image: string
     country: string
     Message: string
-}
+}"
 
 ## Route Table
 
