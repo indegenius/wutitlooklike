@@ -21,8 +21,16 @@ List your routes in a table
 
 | url | method | action |
 |-----|--------|--------|
-| /capsule | get | get all capsules (index)|
+| / | get | get all capsules (index)|
 | /capsule/:id | get | get a particular capsule (show)|
+|/new | get | add a pic
+|/ | post |create capsule
+|/:id| delete | remove capsule
+|/:id/edit| post | edit capsule
+|/:id| put | update capsule
+
+
+
 
 ## User Stories
 user types URL of shared image (ie:imgur)
