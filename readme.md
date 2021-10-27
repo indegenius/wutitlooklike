@@ -21,8 +21,8 @@ List your routes in a table
 
 | url | method | action |
 |-----|--------|--------|
-| /todo | get | get all todos (index)|
-| /todo/:id | get | get a particular todo (show)|
+| /capsule | get | get all capsules (index)|
+| /capsule/:id | get | get a particular capsule (show)|
 
 ## User Stories
 user types URL of shared image (ie:imgur)
