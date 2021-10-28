@@ -29,26 +29,7 @@ const router = express.Router()
 // Capsules Routes
 ////////////////////////
 
-//seed route - seed our starter data
-router.get("/seed", (req, res) => {
-    // array of starter capsules
-    const startCapsules = [
-        { name: "Orange", color: "orange", readyToEat: false },
-        { name: "Grape", color: "purple", readyToEat: false },
-        { name: "Banana", color: "orange", readyToEat: false },
-        { name: "Strawberry", color: "red", readyToEat: false },
-        { name: "Coconut", color: "brown", readyToEat: false },
-      ];
 
-    // delete all capsules
-    Capsule.deleteMany({}).then((data) => {
-        // seed the starter capsules
-        Capsule.create(startCapsules).then((data) => {
-            // send created capsules back as JSON
-            res.json(data)
-        })
-    })
-})
 
 // index route - get - /capsules
 router.get("/", (req, res) => {
@@ -81,8 +62,7 @@ router.get("/new", (req, res) => {
 // create - post request - /capsules
 router.post("/", (req, res) => {
 
-    // convert the checkbox property to true or false
-    req.body.readyToEat = req.body.readyToEat === "on" ? true : false
+    
 
     // add the username to req.body, to track user
     req.body.username = req.session.username
@@ -91,7 +71,7 @@ router.post("/", (req, res) => {
     Capsule.create(req.body)
     .then((capsule) => {
         // redirect the user back to the index route
-        res.redirect("/capsules")
+        res.redirect("/")
     })
     // error handling
     .catch((error) => {

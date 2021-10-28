@@ -2,18 +2,20 @@
 {% block content %}
 
 <div>
-    <a href="/capsules/respect"><button>Post a New Love Capsule</button></a>
-    <a href="/user/logout"><button>Logout</button></a>
+    <navigation>
+        <center> <a href="/capsules/respect"><button>Post a New Love Capsule</button></a></center>
+       </navigation>
+    <article class="mainwrap">
     {% for capsule in capsules %}
-        <article class="mainwrap">
+        
         
         <a href="/capsules/{{ capsule._id }}">
             <img src="{{capsule.picture}}" title="{{capsule.message}}"/>
                 
         </a>
-</article>
-{% endfor %}
 
+{% endfor %}
+</article>
 
 </div>
 

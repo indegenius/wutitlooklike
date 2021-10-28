@@ -1,1 +1,39 @@
-.mainwrap img{ text-align: center; display:inline; width:10px; height:10px; }
+body{
+    background:linear-gradient(black, lightgrey);
+}
+.wrapAll{
+    width:90%;
+    background-color: rgb(97, 96, 96) ;
+    margin:0% auto 0% auto;
+}
+.mainwrap{
+    background:linear-gradient(rgb(73, 73, 73), rgb(131, 131, 131));
+    /* background-image: url("img/3c9eb7b11b23e1a793d9c7fd08643080742414ee-1.jpg"); */
+    border:3px outset rgb(255, 196, 0);
+    border-radius: 17%;
+    margin: 2% auto 2% auto;
+    padding: 0px;
+    width: 92%;
+}
+navigation button{
+    margin:0px;
+    
+    
+}
+.mainwrap img{ 
+    position:relative;
+    text-align: center; 
+    display:inline; 
+    width:10px; 
+    height:10px; 
+    margin:0px; 
+    padding:0px; 
+    /* float:left; */
+}
+.mainwrap a {
+    
+    padding: 0%;
+    margin:0%;
+    width:10px;
+    height:10px;
+}

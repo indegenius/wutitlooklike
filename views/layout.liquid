@@ -36,12 +36,17 @@
     <script src="/app.js" defer></script>
   </head>
   <body>
+    <div class="wrapAll">
     <header>
       <h1>The Love Capsule</h1>
     </header>
 
     <main>{% block content %}My default content{% endblock %}</main>
 
-    <footer></footer>
+    <footer>
+      <a href="/user/logout"><button>Logout</button></a>
+      <h5>site by <a href="http://iyahtv.com"><img src="https://howtobeafamousrapper.com/wp-content/uploads/2014/12/iyahlogo.png" alt="iyah fine arts logo" /></a>IYAH</h5>
+    </footer>
+  </div>
   </body>
 </html>
