@@ -1,24 +1,46 @@
 body{
     background:linear-gradient(black, lightgrey);
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h1{
+    margin:0px;
+}
 .wrapAll{
     width:90%;
     background-color: rgb(97, 96, 96) ;
     margin:0% auto 0% auto;
+    border-radius: 12px;
+    background-image: url("https://images.unsplash.com/photo-1601562219653-0f16522227b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
+    /* background-image: url("https://media.npr.org/assets/img/2021/09/17/gettyimages-1235298686-d8fbf2301dcb541968c28aa1c79560a068330d8f-s1100-c50.jpg"); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2015/09/12/08/58/candles-936743_960_720.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 .mainwrap{
-    background:linear-gradient(rgb(73, 73, 73), rgb(131, 131, 131));
+    background-color:rgba(63, 63, 63, 0.75);
+/* courtesy https://codepen.io/bitmap/pen/jfKxm */
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+
     /* background-image: url("img/3c9eb7b11b23e1a793d9c7fd08643080742414ee-1.jpg"); */
     border:3px outset rgb(255, 196, 0);
-    border-radius: 17%;
-    margin: 2% auto 2% auto;
-    padding: 0px;
+    border-radius: 12px;
+    margin: 1% auto 1% auto;
+    padding: 3px;
     width: 92%;
 }
-navigation button{
+navigation a{
     margin:0px;
-    
-    
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    padding:2px;
+    font-family: 'Dancing Script', cursive;
+    font-size: calc( 18px + (18 - 16) * (100vw - 400px) / (800 - 400) );
+
 }
 .mainwrap img{ 
     position:relative;
@@ -36,4 +58,70 @@ navigation button{
     margin:0%;
     width:10px;
     height:10px;
+}
+navigation{
+    width:100%;
+    background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+    background-size: 6px;
+    display: inline-block;
+}
+
+footer{
+    padding:0px 0px 1px 10px;
+    /* background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+    background-size: 6px; */
+    background-color:rgba(63, 63, 63, 0.95);
+    color:silver;
+}
+
+header {
+    background-color:rgba(63, 63, 63, 0.75);
+    color:silver;
+    font-family: 'Dancing Script', cursive;
+    font-size: .75em;
+    padding-left:2%;
+    margin-bottom:0px;
+    display:block;
+    justify-content: right;
+    flex-wrap:wrap;
+}
+header ul {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 1em;
+  /* width:33%; */
+  text-decoration: none;
+  margin:0px auto;
+}
+header li{
+width:100%;
+margin:2%;
+text-decoration: none;
+}
+header h1  {
+    margin:0px;
+}
+header h2  {
+    margin:0px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    header {
+        
+        padding-left:2%;
+        margin-bottom:0px;
+        display:flex;
+        justify-content: right;
+        flex-wrap:wrap;
+    }
+.powr-visitor-counter{
+    width:33.3%;
+}
+.title{
+    width:inherit;
+}
+
 }
