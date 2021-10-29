@@ -5,15 +5,18 @@
 
     <img src="{{capsule.picture}}" />
     <h3 class="message">{{capsule.message}}</h3>
+    <h4 class="place">a capsule from {{ capsule.country }}</h4>
     
 
 </article></center>
 <div class="bottomless">
+   <a href="/"><button>Back to Main</button></a>    
+   {% if req.session.loggedIn == true %} 
 <a href="/capsules/{{ capsule._id }}/edit"><button>EDIT</button></a>
- <a href="/"><button>Back to Main</button></a>   
 <form action="/capsules/{{ capsule._id }}?_method=DELETE" method="post">
     <input type="submit" value="DELETE">
     </form>
+    {% endif %}
 </div>
     
 

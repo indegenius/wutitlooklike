@@ -126,7 +126,7 @@ router.delete("/:id", (req, res) => {
     Capsule.findByIdAndRemove(id)
     .then((capsule) => {
         // redirect user back to index
-        res.redirect("/capsules")
+        res.redirect("/")
     })
      // error handling
      .catch((error) => {
