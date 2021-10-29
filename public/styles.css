@@ -36,7 +36,7 @@ h1{
     border:3px outset rgb(255, 196, 0);
     border-radius: 12px;
     margin: 1% auto 1% auto;
-    padding: 3px;
+    padding: 10px;
     width: 92%;
 }
 navigation a{
@@ -46,7 +46,7 @@ navigation a{
     border-radius: 10px;
     padding:2px;
     font-family: 'Dancing Script', cursive;
-    font-size: calc( 18px + (18 - 16) * (100vw - 400px) / (800 - 400) );
+    font-size: calc( 16px + (18 - 16) * (100vw - 400px) / (800 - 400) );
 
 }
 .mainwrap img{ 
@@ -83,6 +83,9 @@ footer{
     margin-bottom: 20px;
     
 }
+.salute{
+    font-size: smaller;
+}
 footer h5{
     font-family:'Times New Roman', Times, Georgia, serif;
 }
@@ -105,7 +108,7 @@ header ul {
     font-size: 1em;
   /* width:33%; */
   text-decoration: none;
-  margin:0px auto;
+  margin:0px 5% 0px -5%;
 }
 header li{
 width:100%;
@@ -119,6 +122,42 @@ header h2  {
     margin:0px;
 }
 
+article{
+width:92%;
+margin: 4% auto;
+}
+article img {
+    width:inherit;
+}
+.letter{
+    background-color: rgb(255, 196, 0, 0.85);
+    border: 2px outset black;
+    border-radius: 4px;
+    padding:2px;
+    font-family: 'Dancing Script', cursive;
+}
+.message{
+    background-color: rgb(255, 196, 0, 0.95);
+    border: 2px outset black;
+    border-radius: 4px;
+    padding:2px;
+    font-family: 'Dancing Script', cursive;
+    font-size: calc( 18px + (18 - 16) * (100vw - 400px) / (800 - 400) );
+}
+
+.bottomless{
+    display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        /* border:5px solid yellow; */
+        font-size: calc( 12px + (14 - 10) * (100vw - 400px) / (800 - 400) );
+
+}
+.privacy{
+    display:flex;
+    justify-content: space-between;
+    font-size:small;
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -135,6 +174,10 @@ header h2  {
 }
 .title{
     width:inherit;
+}
+
+html { 
+    height: 100%; 
 }
 
 }

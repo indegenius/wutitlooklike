@@ -8,10 +8,13 @@
     
 
 </article></center>
+<div class="bottomless">
 <a href="/capsules/{{ capsule._id }}/edit"><button>EDIT</button></a>
-    <form action="/capsules/{{ capsule._id }}?_method=DELETE" method="post">
+ <a href="/"><button>Back to Main</button></a>   
+<form action="/capsules/{{ capsule._id }}?_method=DELETE" method="post">
     <input type="submit" value="DELETE">
     </form>
-    <a href="/capsules"><button>Back to Main</button></a>
+</div>
+    
 
 {% endblock %}
