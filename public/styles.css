@@ -193,9 +193,9 @@ article{
 width:92%;
 margin: 4% auto;
 }
-/* article img {
+article img {
     width:inherit;
-} */
+}
 .letter{
     background-color: rgb(255, 196, 0, 0.85);
     border: 2px outset black;
