@@ -11,6 +11,7 @@ const UserRouter = require("./controllers/user")
 const session = require("express-session") // session middleware
 const MongoStore = require("connect-mongo") // save sessions in mongo
 const Capsule = require("./models/capsules.js") // capsules model
+const sass = require('node-sass');
 
 
 /////////////////////////////////
@@ -49,6 +50,14 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
+// // sass middleware
+// app.use(
+//     sass.middleware({
+//         src: __dirname + '/public', //where the sass files are 
+//         dest: __dirname + '/public', //where css should go
+//         debug: true // obvious
+//     })
+// );
 
 ////////////////////////////////////////
 // Routes

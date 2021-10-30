@@ -50,7 +50,7 @@ h1{
     background-size: 4px 4px;
 
     /* background-image: url("img/3c9eb7b11b23e1a793d9c7fd08643080742414ee-1.jpg"); */
-    border:3px outset rgb(255, 196, 0);
+    border:.5px outset rgb(255, 196, 0);
     border-radius: 12px;
     margin: 1% auto 1% auto;
     padding: 10px;
@@ -66,22 +66,66 @@ navigation a{
     font-size: calc( 16px + (18 - 16) * (100vw - 400px) / (800 - 400) );
 
 }
-.mainwrap img{ 
-    position:relative;
-    text-align: center; 
-    display:inline; 
-    width:30px; 
-    height:30px; 
-    margin:0px; 
-    padding:0px; 
-    /* float:left; */
+
+.capwrap {
+    /* padding-top: 100px;*/ 
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding-top: 0px;
+ text-align: center;
+  }
+
+
+
+#capsule{ 
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    
+    height: 30px;
+    width: 30px;
+    margin: 2px 2px 2px 2px;
+    align-self: center;
+    background: #fff;
+    z-index: 1;
+
+    
 }
+/* courtesy https://codepen.io/kevinmcullen/pen/PVmwVz */
+.border {
+    
+    display: block;
+    top: -50%;
+    left: -50%;
+    z-index: -9;
+    display: block;
+    height: 35px;
+    width: 35px;
+    /* transform: rotate(-45deg); */
+    overflow: hidden;
+    background: linear-gradient(to right, #D64933 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #D64933 100%);
+    background-size: 80px auto;
+    
+    animation: shine 3s linear infinite;
+  }
+  
+  /*Begin shimmer code*/
+  
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }fff
+
 .mainwrap a {
     
     padding: 0%;
     margin:0%;
-    width:10px;
-    height:10px;
+    
 }
 navigation{
     width:100%;
@@ -149,9 +193,9 @@ article{
 width:92%;
 margin: 4% auto;
 }
-article img {
+/* article img {
     width:inherit;
-}
+} */
 .letter{
     background-color: rgb(255, 196, 0, 0.85);
     border: 2px outset black;
