@@ -138,18 +138,22 @@ router.delete("/:id", (req, res) => {
 router.get("/:id", (req, res) => {
     // get the id from params
     const id = req.params.id
+    // const loggedIn = req.session.loggedIn}
 
     // get that particular capsule from the database
     Capsule.findById(id)
     .then((capsule) => {
         // render the show template with the capsule
-        res.render("capsules/show.liquid", {capsule})
-    })
+        res.render("capsules/show.liquid", {capsule, loggedIn: req.session.loggedIn})
+    }) //Then the variable would be available as loggedIn
     // error handling
     .catch((error) => {
         res.json({error})
     })
 })
+
+
+
 
 
 /////////////////////////////

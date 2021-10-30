@@ -52,19 +52,19 @@ h1{
     /* background-image: url("img/3c9eb7b11b23e1a793d9c7fd08643080742414ee-1.jpg"); */
     border:.5px outset rgb(255, 196, 0);
     border-radius: 12px;
-    margin: 1% auto 1% auto;
+    margin: 1% auto 3% auto;
     padding: 10px;
     width: 92%;
 }
 navigation a{
     margin:0px;
     background-color: rgb(255, 196, 0);
-    border: 2px dashed black;
-    border-radius: 10px;
+    border: 2px inset black;
+    border-radius: 7px;
     padding:2px;
     font-family: 'Dancing Script', cursive;
     font-size: calc( 16px + (18 - 16) * (100vw - 400px) / (800 - 400) );
-
+width:80%;
 }
 
 .capwrap {
@@ -175,7 +175,7 @@ header ul {
     font-size: 1em;
   /* width:33%; */
   text-decoration: none;
-  margin:0px 5% 0px -5%;
+  margin:0px 5% 0px 5%;
 }
 header li{
 width:100%;
