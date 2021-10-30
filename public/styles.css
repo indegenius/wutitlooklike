@@ -201,8 +201,24 @@ article img {
     border: 2px outset black;
     border-radius: 4px;
     padding:2px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Inconsolata', monospace;
+    
 }
+.letter p{
+    font-size:1.3em;
+    font-weight: 800;
+}
+.letter img{max-width:100%;
+    max-height:250px;
+}
+.letter h1 {
+    font-size:2em;
+    /* font-weight: 800; */
+    font-family: 'Bowlby One SC', cursive;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    text-align: center;
+}
+
 .message{
     background-color: rgb(255, 196, 0, 0.95);
     border: 2px outset black;
@@ -246,6 +262,9 @@ article img {
 html { 
     height: 100%; 
 }
-
+.letter h1 {
+    
+    text-align: left;
+}
 
 }
