@@ -143,7 +143,7 @@ router.get("/:id", (req, res) => {
     // get that particular capsule from the database
     Capsule.findById(id)
     .then((capsule) => {
-        // render the show template with the capsule
+        // render the show template with the capsule //include userlogged in session courtasy Alex Merced
         res.render("capsules/show.liquid", {capsule, loggedIn: req.session.loggedIn})
     }) //Then the variable would be available as loggedIn
     // error handling

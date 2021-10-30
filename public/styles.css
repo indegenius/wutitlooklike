@@ -165,7 +165,7 @@ header {
     padding-left:2%;
     margin-bottom:0px;
     display:block;
-    justify-content: right;
+    justify-content: center;
     flex-wrap:wrap;
 }
 header ul {
@@ -233,7 +233,7 @@ article img {
         padding-left:2%;
         margin-bottom:0px;
         display:flex;
-        justify-content: right;
+        justify-content: center;
         flex-wrap:wrap;
     }
 .powr-visitor-counter{
@@ -246,5 +246,6 @@ article img {
 html { 
     height: 100%; 
 }
+
 
 }
