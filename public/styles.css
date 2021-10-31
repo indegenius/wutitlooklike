@@ -205,7 +205,7 @@ article img {
     
 }
 .letter audio{
-    width:inherit;
+    width:100%;
 }
 .letter p{
     font-size:1.3em;
