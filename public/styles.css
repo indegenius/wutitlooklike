@@ -34,7 +34,8 @@ h1{
 .wrapAll{
     width:90%;
     background-color: rgb(97, 96, 96) ;
-    margin:5% auto 0% auto;
+    margin: 5% auto 0% auto;
+    padding: .5% 0% .5% 0% ;
     border-radius: 12px;
     background-image: url("https://images.unsplash.com/photo-1601562219653-0f16522227b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
     /* background-image: url("https://media.npr.org/assets/img/2021/09/17/gettyimages-1235298686-d8fbf2301dcb541968c28aa1c79560a068330d8f-s1100-c50.jpg"); */
@@ -60,7 +61,7 @@ navigation a{
     margin:0px;
     background-color: rgb(255, 196, 0);
     border: 2px inset black;
-    border-radius: 7px;
+    border-radius: 6px;
     padding:2px;
     font-family: 'Dancing Script', cursive;
     font-size: calc( 16px + (18 - 16) * (100vw - 400px) / (800 - 400) );
@@ -167,6 +168,7 @@ header {
     display:block;
     justify-content: center;
     flex-wrap:wrap;
+    border-radius: 0px ;
 }
 header ul {
     display:flex;
