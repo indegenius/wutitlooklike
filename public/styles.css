@@ -204,6 +204,9 @@ article img {
     font-family: 'Inconsolata', monospace;
     
 }
+.letter audio{
+    width:inherit;
+}
 .letter p{
     font-size:1.3em;
     font-weight: 500;
